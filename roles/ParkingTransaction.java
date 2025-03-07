@@ -1,4 +1,8 @@
 
+package roles;
+
+import java.time.LocalDateTime;
+
 public record ParkingTransaction(
     String transactionId,
     Vehicle vehicle,

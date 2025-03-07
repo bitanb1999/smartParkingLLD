@@ -1,3 +1,4 @@
+package roles;
 public record ParkingSpot(
     int spotId,
     int floor,

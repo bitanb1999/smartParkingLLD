@@ -1,3 +1,12 @@
+import roles.*;
+import database.*;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class ParkingManager {
     private final ParkingDatabase database;
     private final ParkingSpotAllocator allocator;

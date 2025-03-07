@@ -1,3 +1,8 @@
+import roles.*;
+import database.*;
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.*;
 public class FeeCalculator {
     private static final Map<VehicleType, Double> HOURLY_RATES = Map.of(
         VehicleType.MOTORCYCLE, 2.0,

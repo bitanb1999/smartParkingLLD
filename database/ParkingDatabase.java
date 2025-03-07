@@ -1,8 +1,15 @@
+package database;
+import roles.*;
+
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.locks.*;
+
 public class ParkingDatabase {
-    private final Map<Integer, ParkingSpot> spots;
-    private final Map<String, Vehicle> activeVehicles;
-    private final Map<String, ParkingTransaction> transactions;
-    private final ReadWriteLock lock = new ReentrantReadWriteLock();
+    public  Map<Integer, ParkingSpot> spots;
+    public  Map<String, Vehicle> activeVehicles;
+    public  Map<String, ParkingTransaction> transactions;
+    public  ReadWriteLock lock = new ReentrantReadWriteLock();
 
     public ParkingDatabase(int floors, int spotsPerFloor) {
         this.spots = new ConcurrentHashMap<>();

@@ -1,3 +1,4 @@
+package roles;
 public enum VehicleType {
     MOTORCYCLE(1.0), CAR(2.0), BUS(4.0);
     

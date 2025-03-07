@@ -1,9 +1,17 @@
+import database.ParkingDatabase;
+import roles.ParkingSpot;
+import roles.VehicleType;
+
+import java.util.Comparator;
+import java.util.Optional;
+
 public class ParkingSpotAllocator {
     private final ParkingDatabase database;
 
     public ParkingSpotAllocator(ParkingDatabase database) {
         this.database = database;
     }
+
 
     public Optional<ParkingSpot> allocateSpot(VehicleType type) {
         database.lock.writeLock().lock();
@@ -34,7 +42,7 @@ public class ParkingSpotAllocator {
                 ParkingSpot freeSpot = new ParkingSpot(
                     spot.spotId(), spot.floor(), spot.supportedType(), false, spot.size()
                 );
-                database.spots.put(spotId(), freeSpot);
+                database.spots.put(spot.spotId(), freeSpot);
             }
         } finally {
             database.lock.writeLock().unlock();

@@ -1,4 +1,6 @@
-public class Main {
+import roles.*;
+
+class Main {
     public static void main(String[] args) {
         ParkingManager parkingManager = new ParkingManager(3, 10);
 
