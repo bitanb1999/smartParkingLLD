@@ -14,8 +14,6 @@ A comprehensive backend system for managing a multi-floor parking lot with autom
 4. [Key Features](#key-features)
 5. [Technical Details](#technical-details)
 6. [Usage](#usage)
-7. [Design Considerations](#design-considerations)
-8. [Future Enhancements](#future-enhancements)
 
 ## Overview
 This system manages a smart parking lot with multiple floors and various parking spot types. It handles vehicle entry/exit, automatic spot allocation based on vehicle size, real-time availability tracking, and fee calculation.
