@@ -39,6 +39,7 @@ The system follows a modular design with separation of concerns:
 public enum VehicleType {
     MOTORCYCLE(1.0), CAR(2.0), BUS(4.0);
 }
+```
 Defines vehicle categories with size factors
 Size factors determine spot compatibility
 Hourly rates: Motorcycle ($2), Car ($5), Bus ($10)
